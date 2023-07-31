@@ -1,0 +1,115 @@
+html {
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+}
+
+nav ul {
+  margin: inherit;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 20px 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 6px;
+}
+
+nav ul li a:hover {
+  background-color: aliceblue;
+}
+
+section {
+  margin: 20px;
+}
+
+form {
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+form input[type="submit"] {
+  margin: 0;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* tambahkan CSS untuk section profile disini */
+
+.top {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.button1 {
+  border-radius: 12px;
+  border: none;
+  height: 3em;
+  width: 5em;
+  background-color: blue;
+  color: white;
+}
+
+.button2 {
+  border-radius: 12px;
+  height: 3em;
+  width: 6em;
+  background-color: white;
+  color: green;
+  border: 2px solid #4CAF50;
+}
+
+.pfp {
+  margin: 20px;
+  border-radius: 9999px;
+  border-color: orange;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.profile-text p {
+  color: grey;
+  font-size: 0.75rem;
+}
+
+table {
+  height: 100%;
+}
+
+#detail {
+  margin-left: 1em;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+td {
+  padding-left: 15px;
+}
