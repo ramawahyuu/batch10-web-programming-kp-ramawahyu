@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Kalkulasi Lingkaran</title>
+</head>
+<body>
+    <h1>Menghitung Luas dan Keliling Lingkaran</h1>
+    <form>
+        <label for="radius">Panjang Jari-jari Lingkaran (r):</label>
+        <input type="number" id="radius" name="radius" step="any" required>
+        <button type="button" onclick="hitung()">Hitung</button>
+    </form>
+
+    <div id="result" style="display: none;">
+        <h2>Hasil Kalkulasi:</h2>
+        <p id="luas">Luas Lingkaran: </p>
+        <p id="keliling">Keliling Lingkaran: </p>
+    </div>
+
+    <script>
+        function hitung() {
+            const radius = parseFloat(document.getElementById('radius').value);
+            const pi = Math.PI;
+
+            const luas = pi * Math.pow(radius, 2);
+            const keliling = 2 * pi * radius;
+
+            document.getElementById('luas').textContent = `Luas Lingkaran: ${luas.toFixed(2)}`;
+            document.getElementById('keliling').textContent = `Keliling Lingkaran: ${keliling.toFixed(2)}`;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
